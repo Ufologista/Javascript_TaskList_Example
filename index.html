@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript" src="/js/index.js"></script>
+    <title>Curso JS</title>
+</head>
+
+<body>
+    <header class="container">
+        <div class="text-center mt-5">
+            <h1>Lista de Tarefas</h1>
+        </div>
+        <div class="row justify-content-center mt-3 g-2">
+            <div class="col-4">
+                <input type="text" onkeypress="this.addEventListener('keyup', function(event){if (event.keyCode === 13){event.preventDefault(); AdicionarTarefa();}})" class="form-control form-control-lg" id="input-tarefa" placeholder="Digite sua tarefa">
+            </div>
+            <div class="col-1">
+                <button class="btn btn-success btn-lg" onclick="AdicionarTarefa()">Adicionar</button>
+            </div>
+        </div>
+    </header>
+    |<main class="container">
+        <table id="TabelaTarefas" class="table text-center mt-5 fs-5 align-middle shadow rounded-3">
+            <thead class="h5 fw-bold">
+                <tr>
+                    <th class="pb-4" colspan="3">MENU DE TAREFAS</th>
+                </tr>
+            </thead>
+            <tbody id="lista-tarefas-body" class="rounded-4">
+            </tbody>
+        </table>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+.item-checked {
+    background-color: rgb(181, 236, 170);
+    text-decoration: line-through;
+}
+
+.item-checked i {
+    color: green;
+}
